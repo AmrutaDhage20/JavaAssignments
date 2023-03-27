@@ -1,10 +1,10 @@
 public class ArrayForClass {
     public static void main (String[] args) {
-        int[] arr = {10,20,30,50,60,80};
+        int[] ageArray = {10,20,30,50,60,80};
 
-        for(int i=0; i<arr.length; i++)
+        for(int i=0; i<ageArray.length; i++)
         {
-            System.out.println(arr[i]);
+            System.out.println("Different numbers are: " +ageArray[i]);
         }
     }
 }

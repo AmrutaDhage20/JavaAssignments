@@ -1,14 +1,14 @@
 public class OneDimensionalArray {
     public static void main(String[] args){
-        int[] arr =new int [4];
-        arr[0]=10;
-        arr[1]=20;
-        arr[2]=30;
-        arr[3]=40;
+        int[] arrayOfMarks =new int [4];
+        arrayOfMarks[0]=60;
+        arrayOfMarks[1]=80;
+        arrayOfMarks[2]=30;
+        arrayOfMarks[3]=50;
 
-        System.out.println("Element at index 0: "+arr[0]);
-        System.out.println("Element at index 1: "+arr[1]);
-        System.out.println("Element at index 2: "+arr[2]);
-        System.out.println("Element at index 3: "+arr[3]);
+        System.out.println("Marks of Ramesh is: "+arrayOfMarks[0]);
+        System.out.println("Marks of Suresh is: "+arrayOfMarks[1]);
+        System.out.println("Marks of Prakash is: "+arrayOfMarks[2]);
+        System.out.println("Marks of Mahesh is: "+arrayOfMarks[3]);
     }
 }
