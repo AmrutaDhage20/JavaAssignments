@@ -27,8 +27,7 @@ import java.util.*;
 public class DestinationCity {
 	public static String destCity(String[][] input) {
 		int i;
-
-		HashMap<String, Integer> outdegree = new HashMap<String, Integer>();
+		HashMap outdegree = new HashMap();
 		if (input.length == 1) {
 			return input[0][1];
 		}
