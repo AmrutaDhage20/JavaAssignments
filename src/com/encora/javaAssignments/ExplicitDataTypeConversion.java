@@ -1,23 +1,17 @@
 package com.encora.javaAssignments;
+public class ExplicitDataTypeConversion {
+	public static void main(String[] args) {
 
-public class ExplicitDataTypeConversion 
-{
-
-	public static void main(String[] args) 
-	{
-		double a = 50.50;
-		System.out.println("Double representation: "+a);
+		double doubleNumber = 50.50;
+		System.out.println("Double representation: "+doubleNumber);
 		
-		float f= (float)a;
-		System.out.println("Float representation: "+f);
+		float floatNumber= (float)doubleNumber;
+		System.out.println("Float representation: "+floatNumber);
 
-		long b = (long)a;
-		System.out.println("Long representation: "+b);
+		long longNumber = (long)doubleNumber;
+		System.out.println("Long representation: "+longNumber);
 
-		
-		int c = (int)b;
-		System.out.println("Int representation: "+c);
-
+		int integerNumber = (int)longNumber;
+		System.out.println("Integer representation: "+integerNumber);
 	}
-
 }

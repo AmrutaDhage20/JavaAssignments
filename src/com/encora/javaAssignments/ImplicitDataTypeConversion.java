@@ -1,9 +1,7 @@
 //Program for Implicit Data Type Conversion
 package com.encora.javaAssignments;
-public class ImplicitDataTypeConversion 
-{
-	public static void main(String[] args) 
-	{
+public class ImplicitDataTypeConversion {
+	public static void main(String[] args) {
 		int age=50;
 		System.out.println("Int representation: "+age); //Prints the int value stored in age variable
 		

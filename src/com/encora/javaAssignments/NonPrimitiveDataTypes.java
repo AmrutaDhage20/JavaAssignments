@@ -13,7 +13,6 @@ public class NonPrimitiveDataTypes {
 		arr = new int[2]; //array integer is till index is 2
 		arr[0]= 0;
 		arr[1]= 1;
-
 		System.out.println(arr[0]); // print 0th location value
 		System.out.println(arr[1]); //print 1st location value
 	}
