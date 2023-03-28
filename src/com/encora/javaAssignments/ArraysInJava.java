@@ -1,5 +1,8 @@
-public class ArraysInJava {
-    public static void main(String[] args) {
+//Program using array
+public class ArraysInJava{
+
+    public static void main(String[] args){
+
         int[] numbersArray = {11,22,33,44,55};
         System.out.println("Number at index 0: " +numbersArray[0]);
         System.out.println("Number at index 1: " +numbersArray[1]);
@@ -8,4 +11,3 @@ public class ArraysInJava {
         System.out.println("Number at index 4: " +numbersArray[4]);
     }
 }
-

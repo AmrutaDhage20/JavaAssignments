@@ -1,7 +1,6 @@
-
 /*Assignment2 -Find Destination City:You are given the array paths, where paths[i] = [cityAi, cityBi] means
- there exists a direct path going from cityAi to cityBi. Return the destination city, that is,
- the city without any path outgoing to another city.
+there exists a direct path going from cityAi to cityBi. Return the destination city, that is,
+the city without any path outgoing to another city.
 It is guaranteed that the graph of paths forms a line without any loop, therefore,
 there will be exactly one destination city.
 Example 1:
@@ -21,34 +20,32 @@ Clearly the destination city is "A".
 Example 3:
 Input: paths = [["A","Z"]]
 Output: "Z"*/
-package com.encora.javaAssignments;
 
 import java.util.*;
-public class DestinationCity {
-	public static String destCity(String[][] input) {
-		int i;
-		HashMap outdegree = new HashMap();
-		if (input.length == 1) {
+public class DestinationCity{
+	public static String destCity(String[][] input){
+
+		int index;
+		HashMap outDegree = new HashMap();
+		if(input.length == 1){
 			return input[0][1];
 		}
-
-		for (i = 0; i < input.length; i++) {
-			if (!outdegree.containsKey(input[i][0])) {
-				outdegree.put(input[i][0], 1);
+		for(index=0; index<input.length; index++){
+			if(!outDegree.containsKey(input[index][0])){
+				outDegree.put(input[index][0],1);
 			}
 		}
-
-		for (i = 0; i < input.length; i++) {
-			if (!outdegree.containsKey(input[i][1])) {
-				return input[i][1];
+		for (index=0; index<input.length; index++){
+			if(!outDegree.containsKey(input[index][1])){
+				return input[index][1];
 			}
 		}
 		return input[0][1];
 	}
-	public static void main(String[] args) {
-		//String[][] input = { { "B", "C" }, { "D", "B" }, { "C", "A" } };
-		//String [][] input = { {"London","New York"}, {"New York","Lima"}, {"Lima","Sao Paulo"}};
-		String [][] input = { {"A", "Z"} };
+	public static void main(String[] args){
+		 String[][] input = {{"B","C"},{"D","B"},{"C","A"}};
+		//String[][] input = {{"London","New York"},{"New York","Lima"},{"Lima","Sao Paulo"}};
+		//String[][] input = {{"A","Z"}};
 		System.out.print("Destination city is : " + destCity(input));
 	}
 }
