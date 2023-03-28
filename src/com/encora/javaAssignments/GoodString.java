@@ -1,28 +1,20 @@
-/*Check if All Characters Have Equal Number of Occurrences
-Given a string s, return true if s is a good string, or false otherwise.
-A string s is good if all the characters that appear in s have the same number of occurrences
- (i.e., the same frequency).
-Example 1:
-Input: s = "abacbc"
-Output: true
-Explanation: The characters that appear in s are 'a', 'b', and 'c'. All characters occur 2 times in s.
-Example 2:
-Input: s = "aaabb"
-Output: false
-Explanation: The characters that appear in s are 'a' and 'b'.*/
-
 import java.util.HashMap;
 
 public class GoodString {
 
+    /*
+      We are checking if string is good or not using below stages -
+      Stage 1 - get unique characters and its count
+      Stage 2 - check if all counts doesn't match then it's a not a good string
+    */
+
     public static void main(String args[]) {
 
-        String stringName = "Java";
+        String stringName = "jjvva";
         int indexNumber;
         stringName.length();
         HashMap<Character, Integer> charCount = new HashMap<>();
 
-        //Stage 1 - get unique characters and its count
         for (indexNumber = 0; indexNumber < stringName.length(); indexNumber++) {
             if (charCount.containsKey(stringName.charAt(indexNumber))) {
                 int count = charCount.get(stringName.charAt(indexNumber));
@@ -34,15 +26,20 @@ public class GoodString {
         }
         System.out.println("CharacterCount-" + charCount);
 
-        //Stage 2 - check if all counts doesn't match then its a not a good string
         int result = 0;
-        boolean isGoodString = true;
+        boolean isGoodString = false;
         for (Object value : charCount.values()) {
             if (result == 0) {
                 result = (int) value;
             }
-            if (result != (int) value)
-                isGoodString = false;
+
+            if (result != (int) value) {
+                result = 0;
+                break;
+            }
+        }
+        if (result > 0) {
+            isGoodString = true;
         }
         System.out.println("IsGoodString-" + isGoodString);
     }
