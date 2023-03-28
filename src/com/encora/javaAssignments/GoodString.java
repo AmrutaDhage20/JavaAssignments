@@ -12,36 +12,38 @@ Output: false
 Explanation: The characters that appear in s are 'a' and 'b'.*/
 
 import java.util.HashMap;
-public class GoodString{
-    public static void main(String args[]){
+
+public class GoodString {
+
+    public static void main(String args[]) {
 
         String stringName = "Java";
         int indexNumber;
         stringName.length();
-        HashMap<Character,Integer> charCount = new HashMap<>();
+        HashMap<Character, Integer> charCount = new HashMap<>();
 
         //Stage 1 - get unique characters and its count
-        for(indexNumber=0; indexNumber<stringName.length(); indexNumber++){
-            if(charCount.containsKey(stringName.charAt(indexNumber))){
-                int count=charCount.get(stringName.charAt(indexNumber));
-                charCount.put(stringName.charAt(indexNumber),++count);
-            }else{
-                charCount.put(stringName.charAt(indexNumber),1);
+        for (indexNumber = 0; indexNumber < stringName.length(); indexNumber++) {
+            if (charCount.containsKey(stringName.charAt(indexNumber))) {
+                int count = charCount.get(stringName.charAt(indexNumber));
+                charCount.put(stringName.charAt(indexNumber), ++count);
+            } else {
+                charCount.put(stringName.charAt(indexNumber), 1);
             }
-            System.out.println("Character-"+stringName.charAt(indexNumber));
+            System.out.println("Character-" + stringName.charAt(indexNumber));
         }
-        System.out.println("CharacterCount-"+charCount);
+        System.out.println("CharacterCount-" + charCount);
 
         //Stage 2 - check if all counts doesn't match then its a not a good string
         int result = 0;
         boolean isGoodString = true;
-        for(Object value:charCount.values()){
-            if(result==0){
-                result=(int)value;
+        for (Object value : charCount.values()) {
+            if (result == 0) {
+                result = (int) value;
             }
-            if(result!=(int)value)
-                isGoodString=false;
+            if (result != (int) value)
+                isGoodString = false;
         }
-        System.out.println("IsGoodString-"+isGoodString);
+        System.out.println("IsGoodString-" + isGoodString);
     }
 }
