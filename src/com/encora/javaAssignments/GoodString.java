@@ -8,13 +8,12 @@ public class GoodString {
       Stage 2 - check if all counts doesn't match then it's a not a good string
     */
 
-    public static void main(String args[]) {
+    public static boolean isGoodString(String stringName) {
 
-        String stringName = "jjvva";
         int indexNumber;
         stringName.length();
-        HashMap<Character, Integer> charCount = new HashMap<>();
 
+        HashMap<Character, Integer> charCount = new HashMap<>();
         for (indexNumber = 0; indexNumber < stringName.length(); indexNumber++) {
             if (charCount.containsKey(stringName.charAt(indexNumber))) {
                 int count = charCount.get(stringName.charAt(indexNumber));
@@ -28,19 +27,20 @@ public class GoodString {
 
         int result = 0;
         boolean isGoodString = false;
-        for (Object value : charCount.values()) {
+        for (int value : charCount.values()) {
             if (result == 0) {
                 result = (int) value;
             }
-
             if (result != (int) value) {
-                result = 0;
-                break;
+                return false;
             }
         }
-        if (result > 0) {
-            isGoodString = true;
-        }
-        System.out.println("IsGoodString-" + isGoodString);
+        return true;
+    }
+
+    public static void main(String args[]) {
+
+        String stringName = "jjava";
+        System.out.println("IsGoodString-" + isGoodString(stringName));
     }
 }
