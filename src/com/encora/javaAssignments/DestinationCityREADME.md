@@ -21,3 +21,13 @@ Clearly the destination city is "A". 
 Example 3:
 Input: paths = [["A","Z"]] 
 Output: "Z" 
+
+Input given as:
+String[][] input = {{"B", "C"}, {"D", "B"}, {"C", "A"}};
+String[][] input = {{"London","New York"},{"New York","Lima"},{"Lima","Sao Paulo"}};
+String[][] input = {{"A","Z"}};
+
+Output:
+A
+Sao Paulo
+Z

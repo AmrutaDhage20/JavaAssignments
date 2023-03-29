@@ -23,9 +23,7 @@ public class DestinationCity {
     }
 
     public static void main(String[] args) {
-        String[][] input = {{"B", "C"}, {"D", "B"}, {"C", "A"}};
-        //String[][] input = {{"London","New York"},{"New York","Lima"},{"Lima","Sao Paulo"}};
-        //String[][] input = {{"A","Z"}};
+        String[][] input = {{"London","New York"},{"New York","Lima"},{"Lima","Sao Paulo"}};
         System.out.print("Destination city is : " + destCity(input));
     }
 }
