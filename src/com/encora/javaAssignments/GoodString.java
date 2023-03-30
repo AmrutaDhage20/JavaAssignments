@@ -11,8 +11,6 @@ public class GoodString {
     public static boolean isGoodString(String stringName) {
 
         int indexNumber;
-        stringName.length();
-
         HashMap<Character, Integer> charCount = new HashMap<>();
         for (indexNumber = 0; indexNumber < stringName.length(); indexNumber++) {
             if (charCount.containsKey(stringName.charAt(indexNumber))) {
@@ -26,7 +24,6 @@ public class GoodString {
         System.out.println("CharacterCount-" + charCount);
 
         int result = 0;
-        boolean isGoodString = false;
         for (int value : charCount.values()) {
             if (result == 0) {
                 result = (int) value;
