@@ -15,12 +15,14 @@ replay_pid*
 ##############################
 .settings/
 bin/
+out/
 tmp/
 .metadata
 .classpath
 .project
 *.tmp
 *.bak
+*.iml
 *.swp
 *~.nib
 local.properties
