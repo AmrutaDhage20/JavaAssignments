@@ -1,5 +1,4 @@
 //Program using Ternary Operator
-//Ternary Operator expression
 
 package ControlFlowStatements;
 

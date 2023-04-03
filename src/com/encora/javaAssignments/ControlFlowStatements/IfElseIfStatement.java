@@ -1,4 +1,5 @@
 // Program for IfElseIf Statement:
+
 package ControlFlowStatements;
 
 public class IfElseIfStatement {
@@ -7,6 +8,7 @@ public class IfElseIfStatement {
 
         int marks = 76;
         char grade;
+
 
         if (marks >= 80) {
             grade = 'A';
