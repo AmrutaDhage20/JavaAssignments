@@ -1,55 +1,60 @@
-//Program using Switch statement
-
 package ControlFlowStatements;
 
 public class SwitchStatement {
 
-    public static void main(String[] args) {
+    //Program using Switch statement
 
-        int month = 8;
-        String monthString;
+    public static void monthString(int month) {
+
+        String monthName;
 
         switch (month) {
+
             case 1:
-                monthString = "January";
+                monthName = "January";
                 break;
             case 2:
-                monthString = "February";
+                monthName = "February";
                 break;
             case 3:
-                monthString = "March";
+                monthName = "March";
                 break;
             case 4:
-                monthString = "April";
+                monthName = "April";
                 break;
             case 5:
-                monthString = "May";
+                monthName = "May";
                 break;
             case 6:
-                monthString = "June";
+                monthName = "June";
                 break;
             case 7:
-                monthString = "July";
+                monthName = "July";
                 break;
             case 8:
-                monthString = "August";
+                monthName = "August";
                 break;
             case 9:
-                monthString = "September";
+                monthName = "September";
                 break;
             case 10:
-                monthString = "October";
+                monthName = "October";
                 break;
             case 11:
-                monthString = "November";
+                monthName = "November";
                 break;
             case 12:
-                monthString = "December";
+                monthName = "December";
                 break;
             default:
-                monthString = "Invalid Month";
+                monthName = "Invalid Month";
                 break;
         }
-        System.out.println(monthString);
+        System.out.println("The month name is:" + monthName);
+    }
+
+    public static void main(String[] args) {
+        monthString(5);
+        monthString(7);
     }
 }

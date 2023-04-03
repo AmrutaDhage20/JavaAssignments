@@ -1,15 +1,12 @@
-// Program for IfElseIf Statement:
-
 package ControlFlowStatements;
 
 public class IfElseIfStatement {
 
-    public static void main(String[] args) {
+    // Program for IfElseIf Statement:
 
-        int marks = 76;
+    static void result(int marks) {
+
         char grade;
-
-
         if (marks >= 80) {
             grade = 'A';
         } else if (marks >= 70) {
@@ -23,4 +20,12 @@ public class IfElseIfStatement {
         }
         System.out.println("Grade = " + grade);
     }
+
+    public static void main(String[] args) {
+        result(50);
+        result(60);
+        result(70);
+        result(80);
+    }
 }
+

@@ -1,12 +1,11 @@
-// Program using NestedIf :
-
 package ControlFlowStatements;
 
 public class NestedIfDemo {
 
-    public static void main(String[] args) {
+    // Program using NestedIf :
 
-        int integerNumber = 50;
+    public static void compareNumbers(int integerNumber) {
+        // int integerNumber = 50;
         if (integerNumber == 50) {
             System.out.println("IntegerNumber is 50");
             if (integerNumber < 75) {
@@ -16,5 +15,11 @@ public class NestedIfDemo {
                 }
             }
         }
+    }
+
+    public static void main(String[] args) {
+        compareNumbers(50);
+        compareNumbers(70);
+        compareNumbers(40);
     }
 }

@@ -1,16 +1,20 @@
-//Program for If Statement:
-
 package ControlFlowStatements;
 
 public class IfStatement {
 
-    public static void main(String[] args) {
+    //Program for If Statement:
 
-        int totalStudents = 10;
+    public static void student(int rank) {
 
-        if (totalStudents < 0) { //checks if the totalStudents is less than zero
-            System.out.println("The number is Negative.");//prints if num is less than 0
+        if (rank < 0) {
+            System.out.println("The number is Negative");
         }
-        System.out.println("Statement outside the if block");//prints if num is greater
+        System.out.println("The number is Positive");
+    }
+
+    public static void main(String[] args) {
+        student(100);
+        student(0);
+        student(-1);
     }
 }

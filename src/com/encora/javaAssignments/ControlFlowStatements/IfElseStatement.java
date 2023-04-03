@@ -1,17 +1,21 @@
-//Program for IfElse statement:
-
 package ControlFlowStatements;
+
 
 public class IfElseStatement {
 
-    public static void main(String[] args) {
+    //Program for IfElse statement:
 
-        int marks = 200;
+    public static void checkEvenOdd(int marks) {
 
-        if (marks > 100) { //checks if marks is greater than 100
-            System.out.println("Value is greater than 100");
+        if (marks % 2 == 0) {
+            System.out.println("The number is Even");
         } else {
-            System.out.println("Value is less than 100");
+            System.out.println("The number is odd");
         }
+    }
+
+    public static void main(String[] args) {
+        checkEvenOdd(9);
+        checkEvenOdd(2);
     }
 }
