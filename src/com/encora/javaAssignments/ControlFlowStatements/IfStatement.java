@@ -9,12 +9,17 @@ public class IfStatement {
         if (rank < 0) {
             System.out.println("The number is Negative");
         }
-        System.out.println("The number is Positive");
+        if (rank > 0) {
+            System.out.println("The number is Positive");
+        }
+        if (rank == 0) {
+            System.out.println("The number is Neutral");
+        }
     }
 
     public static void main(String[] args) {
-        student(100);
-        student(0);
         student(-1);
+        student(2);
+        student(0);
     }
 }
