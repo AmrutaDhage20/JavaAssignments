@@ -5,7 +5,6 @@ public class NestedIfStatement {
     // Program using NestedIf
 
     public static void compareNumbers(int integerNumber) {
-
         if (integerNumber == 50) {
             System.out.println("IntegerNumber is 50");
             if (integerNumber < 75) {

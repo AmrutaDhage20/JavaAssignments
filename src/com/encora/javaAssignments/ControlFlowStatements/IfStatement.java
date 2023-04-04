@@ -5,7 +5,6 @@ public class IfStatement {
     //Program for If Statement:
 
     public static void student(int rank) {
-
         if (rank < 0) {
             System.out.println("The number is Negative");
         }

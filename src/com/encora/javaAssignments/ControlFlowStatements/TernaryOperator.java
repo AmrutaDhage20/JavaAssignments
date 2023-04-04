@@ -4,7 +4,7 @@ public class TernaryOperator {
 
     //Program using Ternary Operator
 
-    static void compareAge(int ageOfPiyu, int ageOfDaksh) {
+    public static void compareAge(int ageOfPiyu, int ageOfDaksh) {
         System.out.println(ageOfPiyu > ageOfDaksh ? ageOfPiyu : ageOfDaksh);
     }
 

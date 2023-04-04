@@ -4,8 +4,7 @@ public class IfElseIfStatement {
 
     // Program for IfElseIf Statement:
 
-    static void result(int marks) {
-
+    public static void result(int marks) {
         char grade;
         if (marks >= 80) {
             grade = 'A';
@@ -28,4 +27,3 @@ public class IfElseIfStatement {
         result(80);
     }
 }
-

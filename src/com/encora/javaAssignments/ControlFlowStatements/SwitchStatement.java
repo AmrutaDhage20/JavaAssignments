@@ -7,9 +7,7 @@ public class SwitchStatement {
     public static void monthString(int month) {
 
         String monthName;
-
         switch (month) {
-
             case 1:
                 monthName = "January";
                 break;
