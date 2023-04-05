@@ -17,6 +17,6 @@ public class PatternProgram {
         }
     }
     public static void main(String[] args){
-        printPattern(6);
+        printPattern(4);
     }
 }
