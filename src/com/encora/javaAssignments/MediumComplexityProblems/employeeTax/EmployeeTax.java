@@ -1,25 +1,16 @@
 package MediumComplexityProblems.employeeTax;
 
-import java.util.Scanner;
-
 public class EmployeeTax {
-
-    /* Java program to calculate income tax */
-
+    /* Java program to calculate Income Tax */
     public static void calculateIncomeTax(double salary) {
-
         double taxableAmount = 0;
         int taxSlab = 0;
         double tax = 0;
-
         taxSlab = (salary > 700000 && salary <= 1000000) ? 2 : (salary > 1000000 && salary <= 1500000) ? 3 : (salary > 1500000) ? 4 : 1;
         System.out.println("taxSlab: " + taxSlab);
-
         taxableAmount = salary - 500000;
         System.out.println("Total Taxable Amount:" + taxableAmount);
-
         switch (taxSlab) {
-
             case 1:
                 System.out.println("Tax Free");
                 break;
@@ -37,7 +28,6 @@ public class EmployeeTax {
     }
 
     public static void main(String[] args) {
-
         calculateIncomeTax(1200000);
     }
 }
