@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class SwappingArrayElement {
     public static boolean isPrime(int number) {
         int index;
-        for (index = 2; index < number / 2; index++) {
+        for (index = 2; index <= number / 2; index++) {
             if (number % index == 0) {
                 return false;
             }
@@ -19,7 +19,7 @@ public class SwappingArrayElement {
         return array_one;
     }
     public static void main(String[] args) {
-        int[] array_one = {1, 6, 7};
+        int[] array_one = {1, 2, 3, 7};
         boolean isPrime = isPrime(array_one[array_one.length - 1]);
         if (isPrime == true) {
             System.out.println("Original Array is: " + Arrays.toString(array_one));

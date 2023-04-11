@@ -8,12 +8,3 @@ Output: 7 is a prime number.
 Original Array is: [1, 2, 3, 7]
 Swapped array is: [7, 2, 3, 1]
 
-Input : [1, 2, 3]
-Output: 3 is a prime number.
-Original Array is: [1, 2, 3]
-Swapped array is: [3, 2, 1]
-
-
-Input : [1, 6, 7, 9, 8]
-Output: 
-
