@@ -7,10 +7,10 @@ public class SwappingArrayElement {
         int index;
         for (index = 2; index <= number / 2; index++) {
             if (number % index == 0) {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
     public static int[] swap(int[] array_one) {
         int temp = array_one[0];
@@ -21,7 +21,7 @@ public class SwappingArrayElement {
     public static void main(String[] args) {
         int[] array_one = {1, 2, 3, 7};
         boolean isPrime = isPrime(array_one[array_one.length - 1]);
-        if (isPrime == true) {
+        if (isPrime == false) {
             System.out.println("Original Array is: " + Arrays.toString(array_one));
             int arr[] = swap(array_one);
             System.out.println("Swapped array is: " + Arrays.toString(arr));
