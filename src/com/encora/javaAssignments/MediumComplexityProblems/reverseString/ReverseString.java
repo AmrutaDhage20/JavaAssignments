@@ -21,6 +21,6 @@ public class ReverseString {
         return reverse.toString();
     }
     public static void main(String[] args) {
-        String myString = stringReverse("Am@ruta");
+        String myString = stringReverse("Ro@hitshetty");
     }
 }
