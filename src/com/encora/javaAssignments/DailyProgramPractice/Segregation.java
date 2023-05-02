@@ -8,8 +8,8 @@ public class Segregation {
 
     public static void main(String[] args) {
         int numbers[] = {0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1};
-        int i, numbers_size = numbers.length;
-        int left = 0, right = numbers_size - 1;
+        int numbersSize = numbers.length;
+        int left = 0, right = numbersSize - 1;
         System.out.println("Original Array : " + Arrays.toString(numbers));
         while (left < right) {
             while (numbers[left] == 0 && left < right)
