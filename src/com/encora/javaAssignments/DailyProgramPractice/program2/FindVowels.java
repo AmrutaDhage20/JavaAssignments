@@ -17,7 +17,10 @@ public class FindVowels {
         return count;
     }
     public static void main(String[] args) {
-        String string_One = "i like Java soo much";
-        System.out.print("Number of  Vowels in the string: " + count_Vowels(string_One) + "\n");
+        String string_One = "I like Java soo much";
+        String lower = string_One.toLowerCase();
+        System.out.println("input String before converting to LowerCase : " + string_One);
+        System.out.println("output String after converting to LowerCase : " + lower);
+        System.out.print("Number of  Vowels in the string: " + count_Vowels(lower) + "\n");
     }
 }
