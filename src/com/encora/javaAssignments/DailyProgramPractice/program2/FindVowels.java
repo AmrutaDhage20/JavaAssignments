@@ -7,22 +7,17 @@ public class FindVowels {
         for (int index = 0; index < string_One.length(); index++) {
             switch (string_One.charAt(index)) {
                 case 'a':
-                case 'A':
                 case 'e':
-                case 'E':
                 case 'i':
-                case 'I':
                 case 'o':
-                case 'O':
                 case 'u':
-                case 'U':
                     count++;
             }
         }
         return count;
     }
     public static void main(String[] args) {
-        String string_One = "I like Java soo much";
+        String string_One = "i like Java soo much";
         System.out.print("Number of  Vowels in the string: " + count_Vowels(string_One) + "\n");
     }
 }
