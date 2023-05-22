@@ -2,13 +2,14 @@ package com.encora.javaAssignments.DailyProgramPractice.program7;
 
 public class program7 {
 
-    public static int search(int array[], int number, int numberTwo) {
-        for (int index = 0; index < number; index++) {
-            if (array[index] == numberTwo)
+    public static int search(int array[], int firstNumber, int secondNumber) {
+        for (int index = 0; index < firstNumber; index++) {
+            if (array[index] == secondNumber)
                 return index;
         }
         return -1;
     }
+
     public static void main(String[] args) {
         int[] array = {3, 4, 1, 7, 5};
         int number = array.length;
