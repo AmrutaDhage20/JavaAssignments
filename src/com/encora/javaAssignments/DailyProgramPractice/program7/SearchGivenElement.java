@@ -8,7 +8,6 @@ public class SearchGivenElement {
         }
         return -1;
     }
-
     public static void main(String[] args) {
         int[] array = {3, 4, 1, 7, 5};
         int arrayLength = array.length;
