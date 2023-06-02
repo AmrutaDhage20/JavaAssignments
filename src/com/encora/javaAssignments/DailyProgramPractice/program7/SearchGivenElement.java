@@ -1,6 +1,7 @@
 package com.encora.javaAssignments.DailyProgramPractice.program7;
 
 public class SearchGivenElement {
+
     public static int search(int array[], int data, int mockData) {
         for (int index = 0; index < data; index++) {
             if (array[index] == mockData)
@@ -8,7 +9,6 @@ public class SearchGivenElement {
         }
         return -1;
     }
-
     public static void main(String[] args) {
         int[] array = {3, 4, 1, 7, 5};
         int arrayLength = array.length;
